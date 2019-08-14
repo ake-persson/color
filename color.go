@@ -2,8 +2,10 @@ package color
 
 import "fmt"
 
+// Code color code.
 type Code int
 
+// None color code.
 const None Code = -1
 
 // Attributes.
@@ -32,6 +34,7 @@ const (
 	LightGray
 )
 
+// Foreground colors with higher offset.
 const (
 	DarkGray Code = iota + 90
 	LightRed
@@ -55,6 +58,7 @@ const (
 	BgLightGray
 )
 
+// Background colors with higher offset.
 const (
 	BgDarkGray Code = iota + 100
 	BgLightRed
